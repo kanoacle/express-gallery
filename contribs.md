@@ -1,1 +1,3 @@
-# Made with love by kanoa and colin
+# Made with love by these cool guys
+    -Kanoa
+    -Colin
