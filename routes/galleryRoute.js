@@ -8,30 +8,50 @@ router.route('/')
   .get((req, res) => {
     gallery.getImages()
     .then(data => {
-      res.send(data);
+      res.render('gallery', {gallery: data});
     });
   })
   .post((req, res) => {
     gallery.postImage(req.body)
-    .then(data => {
-      res.redirect('/gallery');
+    .then(() => {
+      res.redirect(303, '/gallery');
     });
   });
+
+//new post
+router.route('/new')
+.get((req, res) => {
+  res.render('new');
+});
 
 //gallery by id
 router.route('/:id')
   .put((req, res) => {
     gallery.putImage(req.body, req.params.id)
-    .then(data => {
-      res.redirect(303,'/gallery');
+    .then(() => {
+      res.redirect(303, '/gallery');
     });
   })
   .get((req, res) => {
     gallery.getById(req.params.id)
     .then(data => {
-      res.send(data);
+      res.render('gallery', {gallery: data});
+    });
+  })
+  .delete((req, res) => {
+    gallery.deleteById(req.params.id)
+    .then(() => {
+      res.redirect(303, '/gallery');
     });
   });
 
+//edditing by id
+router.route('/:id/edit')
+.get((req, res) => {
+  gallery.getById(req.params.id)
+  .then((data) => {
+    res.render('edit', {gallery: data});
+  });
+});
 
 module.exports = router;

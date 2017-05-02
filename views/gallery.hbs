@@ -1,0 +1,22 @@
+<h1>Gallery</h1>
+  <form action="/gallery/new" method="get">
+    <button type="submit">Create New Post</button>
+  </form>
+  <form action="/gallery/" method="get">
+    <button type="submit">Home</button>
+  </form>
+{{#each gallery}}
+  <br>
+  <p>{{author}}</p>
+  <form action="/gallery/{{id}}" method="get">
+    <button type="submit">{{link}}</button>
+  </form>
+  <p>{{description}}</p>
+  <form action="/gallery/{{id}}/edit" method="get">
+    <br>
+    <button type="submit">Edit Item</button>
+  </form>
+  <br>
+  <br>
+
+{{/each}}

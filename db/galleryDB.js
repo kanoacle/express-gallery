@@ -29,7 +29,15 @@ function putImage(body, id){
 }
 
 function getById(id){
-  return db.Gallery.findOne({
+  return db.Gallery.findAll({
+    where: {
+      id: id
+    }
+  });
+}
+
+function deleteById(id){
+  return db.Gallery.destroy({
     where: {
       id: id
     }
@@ -40,7 +48,8 @@ return {
   postImage,
   getImages,
   putImage,
-  getById
+  getById,
+  deleteById
 };
 
 })();
