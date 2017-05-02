@@ -12,7 +12,9 @@ function postImage(body){
   }
 
 function getImages(){
-  return db.Gallery.findAll();
+  return db.Gallery.findAll({
+    order: '"createdAt"'
+  });
 }
 
 function putImage(body, id){
@@ -23,14 +25,31 @@ function putImage(body, id){
         where: {
           id: id
         }
-
     });
+}
+
+function getById(id){
+  return db.Gallery.findAll({
+    where: {
+      id: id
+    }
+  });
+}
+
+function deleteById(id){
+  return db.Gallery.destroy({
+    where: {
+      id: id
+    }
+  });
 }
 
 return {
   postImage,
   getImages,
-  putImage
+  putImage,
+  getById,
+  deleteById
 };
 
 })();

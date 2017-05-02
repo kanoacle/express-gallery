@@ -1,0 +1,21 @@
+<h1>Edit Post</h1>
+{{#each gallery}}
+<form action="/gallery/{{id}}?_method=PUT" method="post">
+    <h2>Author</h2>
+    <input name="author" value="{{author}}" type="text">
+    <h4>Photo</h4>
+    <input name="link" value="{{link}}" type="text">
+    <h4>Description</h4>
+    <input name="description" value="{{description}}" type="text">
+    <br>
+    <br>
+    <button type="submit">Update Item</button>
+    <br>
+  </form>
+  <form action="/gallery/{{id}}?_method=DELETE" method="post">
+    <button type="submit">Delete Item</button>
+  </form>
+{{/each}}
+  <form action="/gallery" method="get">
+    <button type="submit">Cancel</button>
+  </form>
