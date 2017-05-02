@@ -1,7 +1,8 @@
-var express = require('express');
-var app = express();
+/*jshint esversion: 6*/
+const express = require('express');
+const app = express();
 
-var db = require('./models');
+const db = require('./models');
 const PORT = process.env.PORT || 3000;
 
 app.listen(3000, function() {
