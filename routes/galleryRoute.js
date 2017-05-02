@@ -24,7 +24,7 @@ router.route('/:id')
   .put((req, res) => {
     gallery.putImage(req.body, req.params.id)
     .then(data => {
-      res.redirect('/gallery');
+      res.redirect(303,'/gallery');
     });
   });
 

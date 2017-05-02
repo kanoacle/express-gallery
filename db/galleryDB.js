@@ -15,11 +15,15 @@ function getImages(){
   return db.Gallery.findAll();
 }
 
-function putImage(body){
-  return db.Gallery.upsert({
+function putImage(body, id){
+  return db.Gallery.update({
       author: body.author,
       link: body.link,
-      description: body.description
+      description: body.description }, {
+        where: {
+          id: id
+        }
+
     });
 }
 
