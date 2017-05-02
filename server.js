@@ -9,6 +9,8 @@ var methodOverride = require('method-override');
 const db = require('./models');
 const PORT = process.env.PORT || 3000;
 
+app.use('/static', express.static('public'));
+
 //parse application
 app.use(bodyParser.urlencoded({extended: true}));
 
