@@ -8,7 +8,6 @@ router.route('/')
   .get((req, res) => {
     gallery.getImages()
     .then(data => {
-      console.log(data);
       res.send(data);
     });
   })
@@ -25,6 +24,12 @@ router.route('/:id')
     gallery.putImage(req.body, req.params.id)
     .then(data => {
       res.redirect(303,'/gallery');
+    });
+  })
+  .get((req, res) => {
+    gallery.getById(req.params.id)
+    .then(data => {
+      res.send(data);
     });
   });
 
