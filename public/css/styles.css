@@ -25,19 +25,13 @@ body {
   height: 5vh;
   position: fixed;
   top: 2.75vw;
-  right: 15vw;
-}
-#new-btn-id {
-  height: 4.5vh;
-  position: fixed;
-  top: 3vw;
-  right: 10vw;
+  right: 11.5vw;
 }
 .edit-btn {
   height: 4.5vh;
   position: fixed;
   top: 3vw;
-  right: 5vw;
+  right: 7vw;
 }
 #container {
   position: absolute;
