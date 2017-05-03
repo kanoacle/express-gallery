@@ -9,13 +9,14 @@ var methodOverride = require('method-override');
 const db = require('./models');
 const PORT = process.env.PORT || 3000;
 
-app.use('/static', express.static('public'));
-
 //parse application
 app.use(bodyParser.urlencoded({extended: true}));
 
 //method override
 app.use(methodOverride('_method'));
+
+// serving static files
+app.use('/static', express.static('public'));
 
 //attach gallery router to express
 app.use('/gallery', gallery);
