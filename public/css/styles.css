@@ -1,4 +1,5 @@
 body {
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   background-color: #222;
 }
@@ -54,7 +55,6 @@ body {
   border-radius: 5px;
 }
 .info {
-  font-family: 'Roboto', sans-serif;
   color: #222;
   display: flex;
   margin-bottom: -5vh;
@@ -79,4 +79,68 @@ body {
   border-bottom: 1px solid #444;
   border-left: 1px solid #333;
   border-right: 1px solid #333;
+}
+.pic-edit {
+  width: 55vw;
+  position: absolute;
+  top: 15vh;
+  right: 15vh;
+  border-radius: 5px;
+}
+.label-a {
+  position: absolute;
+  top: 26vh;
+  left: 15.5vw;
+  color: #4FADC3;
+  font-weight: 500;
+}
+.label-l {
+  position: absolute;
+  top: 41vh;
+  left: 14.75vw;
+  color: #4FADC3;
+  font-weight: 500;
+}
+.label-d {
+  position: absolute;
+  top: 56vh;
+  left: 15vw;
+  color: #4FADC3;
+  font-weight: 500;
+}
+.input-a {
+  position: absolute;
+  top: 30vh;
+  left: 13.75vw;
+}
+.input-l {
+  position: absolute;
+  top: 45vh;
+  left: 13.75vw;
+}
+.input-d {
+  position: absolute;
+  top: 60vh;
+  left: 13.75vw;
+}
+.updt {
+  position: absolute;
+  top: 70vh;
+  left: 14vw;
+}
+.dlt {
+  position: absolute;
+  top: 75vh;
+  left: 15.75vw;
+}
+.cncl {
+  position: absolute;
+  top: 70vh;
+  left: 19.5vw;
+}
+#edit {
+  position: absolute;
+  left: 13.75vw;
+  top: 15vh;
+  color: #64E5A9;
 }
