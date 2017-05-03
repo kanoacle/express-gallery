@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="184px" height="184px" viewBox="0 0 184 184" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>Edit</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="120.17366 33.3538097 28.1067004 125.420206 25.3911356 122.70436 117.457532 30.6376822 100.932008 14.1121579 8.82846964 106.214289 32.6458664 130.03253 124.748561 37.9289919"></polygon>
+        <filter x="-6.0%" y="-6.0%" width="112.1%" height="112.1%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="3.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="7" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.266666667   0 0 0 0 0.164705882   0 0 0 0 0.164705882  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <path d="M138.61367,24.064164 C135.781897,30.6618806 126.499567,36.1782672 126.499567,36.1782672 L102.68217,12.3614332 C102.68217,12.3614332 110.360935,2.93166194 114.796555,0.24732996 C119.232174,-2.43700202 141.445725,17.466166 138.61367,24.064164 Z" id="path-3"></path>
+        <filter x="-13.8%" y="-13.8%" width="127.6%" height="127.6%" filterUnits="objectBoundingBox" id="filter-4">
+            <feGaussianBlur stdDeviation="2.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="5" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.266666667   0 0 0 0 0.164705882   0 0 0 0 0.164705882  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <polygon id="path-5" points="30.9680182 131.708972 0.0357348178 138.898142 7.15062146 107.892982"></polygon>
+        <filter x="-16.2%" y="-16.1%" width="132.3%" height="132.3%" filterUnits="objectBoundingBox" id="filter-6">
+            <feGaussianBlur stdDeviation="2.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="5" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.266666667   0 0 0 0 0.164705882   0 0 0 0 0.164705882  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Edit" fill-rule="nonzero">
+            <g id="edit" transform="translate(26.000000, 25.000000)">
+                <g id="Shape">
+                    <use fill="#64D4E5" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <path stroke="#64E5A9" stroke-width="2" d="M25.3545567,121.326724 L10.2426761,106.214307 L100.932003,15.5263661 L116.04332,30.6376833 L25.3545567,121.326724 Z M29.4844056,125.456719 L120.173636,34.7680429 L123.334372,37.9289734 L32.6458757,128.618301 L29.4844056,125.456719 Z M29.4844056,125.456719 L25.3545567,121.326724 L24.6840278,121.997255 L23.9769598,122.704325 L24.6839922,123.41143 L27.399557,126.127277 L28.1066616,126.834455 L28.813805,126.127315 L29.4844056,125.456719 Z"></path>
+                </g>
+                <g id="Shape">
+                    <use fill="#64D4E5" fill-rule="evenodd" xlink:href="#path-3"></use>
+                    <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                    <path stroke="#64E5A9" stroke-width="3" d="M126.710272,34.2676725 L104.711156,12.2690759 C104.959245,11.9751793 105.224853,11.6634193 105.505862,11.3369194 C106.783374,9.85260168 108.115599,8.36866203 109.433009,6.9868547 C110.082757,6.30534583 110.71364,5.66507416 111.320501,5.07333757 C113.017636,3.41850019 114.473373,2.19620494 115.573177,1.53062942 C115.96336,1.29450016 117.674879,1.79512114 120.017793,3.19586517 C122.553017,4.71158517 125.568594,7.07560003 128.397479,9.7624801 C134.457407,15.5182095 138.157326,21.3243791 137.235281,23.4725189 L137.235269,23.4725472 C136.29261,25.6688367 134.444378,27.9594764 131.954281,30.2171992 C130.59168,31.452643 129.125954,32.5984371 127.660133,33.6221948 C127.326461,33.8552382 127.008667,34.0707425 126.710272,34.2676725 Z"></path>
+                </g>
+                <g id="Shape">
+                    <use fill="#64D4E5" fill-rule="evenodd" xlink:href="#path-5"></use>
+                    <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                    <path stroke="#64E5A9" stroke-width="3" d="M27.9970959,130.859483 L2.03472093,136.893564 L8.00645449,110.870022 L27.9970959,130.859483 Z"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

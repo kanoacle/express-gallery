@@ -1,0 +1,23 @@
+<a href="/gallery">
+   <img id="honua-id" src="/static/Honua.svg">
+</a>
+<a href="/gallery/new">
+  <img id="new-btn-id" src="/static/Post.svg">
+</a>
+<div id="container-id">
+  {{#each gallery}}
+    <br>
+      <a href="/gallery/{{id}}">
+        <img class="image-id" src="{{link}}" type="submit">
+      </a>
+      <div class="info">
+        <p class="by">{{author}}</p>
+        <p class="descrip">{{description}}</p>
+      </div>
+  <a class="edit" href="/gallery/{{id}}/edit">
+    <img class="edit-btn" src="/static/Edit.svg">
+  </a>
+    <br>
+    <br>
+  {{/each}}
+</div>

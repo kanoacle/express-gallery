@@ -1,21 +1,23 @@
-<h1>Gallery</h1>
-  <form action="/gallery/new" method="get">
-    <button type="submit">Create New Post</button>
-  </form>
-  <form action="/gallery/" method="get">
-    <button type="submit">Home</button>
-  </form>
-{{#each gallery}}
-  <br>
-  <p>{{author}}</p>
-  <a href="/gallery/{{id}}">
-    <img src="{{link}}" type="submit">
+<div id="header">
+  <a href="/gallery">
+     <img id="honua" src="/static/Honua.svg">
   </a>
-  <p>{{description}}</p>
-  <form action="/gallery/{{id}}/edit" method="get">
+  <a href="/gallery/new">
+    <img id="new-btn" src="/static/Post.svg">
+  </a>
+</div>
+<div id="container">
+  {{#each gallery}}
     <br>
-    <button type="submit">Edit Item</button>
-  </form>
-  <br>
-  <br>
-{{/each}}
+      <a href="/gallery/{{id}}">
+        <img class="image" src="{{link}}" type="submit">
+      </a>
+      <div class="info">
+        <p class="by">{{author}}</p>
+        <p class="descrip">{{description}}</p>
+      </div>
+      <hr class="divider">
+    <br>
+    <br>
+  {{/each}}
+</div>

@@ -35,7 +35,7 @@ router.route('/:id')
   .get((req, res) => {
     gallery.getById(req.params.id)
     .then(data => {
-      res.render('gallery', {gallery: data});
+      res.render('byid', {gallery: data});
     });
   })
   .delete((req, res) => {
