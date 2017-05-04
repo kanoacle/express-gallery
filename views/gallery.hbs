@@ -6,17 +6,17 @@
     <img id="new-btn" src="/static/Post.svg">
   </a>
 
-  {{#if user}}
-    <div>
-      <form action="/logout" method="get">
-        <button type="submit">Logout</button>
-      </form>
-    </div>
+{{#if user}}
+  <div>
+    <form action="/logout" method="get">
+      <button type="submit">Logout</button>
+    </form>
+  </div>
 
-    <a href="/gallery/profile">
-      <button id="profile">Profile</button>
-    </a>
-  {{/if}}
+  <a href="/gallery/profile">
+    <button id="profile">Profile</button>
+  </a>
+{{/if}}
 
 </div>
 
