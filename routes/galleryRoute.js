@@ -61,6 +61,12 @@ router.route('/login')
     res.render('login');
 });
 
+//profile
+router.route('/profile')
+  .get((req, res) => {
+    res.render('profile');
+});
+
 //new post
 router.route('/new')
   .get(isAuthenticated, (req, res) => {
@@ -78,7 +84,10 @@ router.route('/:id')
   .get((req, res) => {
     gallery.getById(req.params.id)
     .then(data => {
-      res.render('byid', {gallery: data});
+      res.render('byid', {
+        gallery: data,
+        user: req.user
+        });
     });
   })
   .delete((req, res) => {
