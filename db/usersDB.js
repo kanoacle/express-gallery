@@ -10,6 +10,15 @@ function createUser(body){
     });
   }
 
+function getUserImages(author) {
+return db.Gallery.findAll({
+    where: {
+      username: body.author
+    }
+  });
+}
+
+
 return {
   createUser
 };

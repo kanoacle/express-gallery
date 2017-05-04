@@ -61,9 +61,10 @@ router.route('/login')
     res.render('login');
 });
 
-//profile
+//profile -- IN PROGRESS
 router.route('/profile')
   .get((req, res) => {
+    users.getUserImages(req.body);
     res.render('profile');
 });
 
