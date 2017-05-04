@@ -129,6 +129,11 @@ app.post('/login', passport.authenticate('local', {
   failureRedirect: '/login'
 }));
 
+app.get('/logout', function(req, res){
+  req.logout();
+  res.redirect('/gallery');
+});
+
 function isAuthenticated (req, res, next) {
   console.log('checking');
   if(req.isAuthenticated()) {
