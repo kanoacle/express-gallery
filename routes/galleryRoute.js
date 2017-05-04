@@ -23,7 +23,10 @@ router.route('/')
   .get((req, res) => {
     gallery.getImages()
     .then(data => {
-      res.render('gallery', {gallery: data});
+      res.render('gallery', {
+         gallery: data,
+         user: req.user
+      });
     });
   })
   .post((req, res) => {
