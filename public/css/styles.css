@@ -18,9 +18,9 @@ body {
 }
 #honua-id {
   position: fixed;
-  top: 2.75vw;
+  top: 5vh;
   left: 3.5vw;
-  width: 10vw;
+  width: 17.5vw;
 }
 #new-btn {
   height: 5vh;
@@ -35,26 +35,33 @@ body {
   right: 7vw;
 }
 #container {
+  width: 50vw;
   position: absolute;
   top: 17.5vh;
   left: 25vw;
   margin: 0 auto;
-}
-#container-id {
-  position: absolute;
-  top: 2.5vh;
-  left: 17vw;
-  margin: 0 auto;
+  border: 1px solid white;
 }
 .image {
   width: 50vw;
   border-radius: 5px;
 }
 .image-id {
+  position: absolute;
+  left: 25vw;
+  top: 5vh;
   width: 66vw;
+  max-height: 90vh;
   border-radius: 5px;
 }
 .info {
+  color: #222;
+  display: flex;
+  margin-bottom: -5vh;
+  align-items: center;
+}
+.info-id {
+  width: 16.75vw;
   color: #222;
   display: flex;
   margin-bottom: -5vh;
@@ -67,7 +74,25 @@ body {
 }
 .descrip {
   position: relative;
+  max-width: 32.5vw;
+  word-wrap: break-word;
   left: 10vw;
+  color: #4FADC3;
+  font-size: 14px;
+}
+.by-id {
+  position: fixed;
+  left: 3.6vw;
+  top: 27.5vh;
+  color: #64E5A9;
+}
+.descrip-id {
+  height: 50%;
+  max-width: 17.5vw;
+  word-wrap: break-word;
+  position: fixed;
+  left: 3.6vw;
+  top: 31vh;
   color: #4FADC3;
   font-size: 14px;
 }
@@ -75,6 +100,7 @@ body {
   width: 50vw;
   position: relative;
   top: 4.5vh;
+  margin: 10px auto;
   border-top: 1px solid #333;
   border-bottom: 1px solid #444;
   border-left: 1px solid #333;
