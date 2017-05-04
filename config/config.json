@@ -2,7 +2,7 @@
   "development": {
     "username": "gallery_user",
     "password": null,
-    "database": "sequelize_demo",
+    "database": "express_gallery",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
