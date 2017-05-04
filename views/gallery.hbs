@@ -6,15 +6,19 @@
     <img id="new-btn" src="/static/Post.svg">
   </a>
 
+{{#if user}}
   <div>
     <form action="/logout" method="get">
-      <button id="logout" type="submit">Logout</button>
+      <button type="submit">Logout</button>
     </form>
   </div>
 
+  <a href="/gallery/profile">
+    <button id="profile">Profile</button>
+  </a>
+{{/if}}
+
 </div>
-
-
 
 <div id="container">
   {{#each gallery}}
