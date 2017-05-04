@@ -14,7 +14,7 @@ body {
   position: fixed;
   top: 1vh;
   left: 38vw;
-  width: 24vw;
+  height: 13vh;
 }
 #honua-id {
   position: fixed;
@@ -25,7 +25,7 @@ body {
 #new-btn {
   height: 5vh;
   position: fixed;
-  top: 2.75vw;
+  top: 4.75vh;
   right: 11.5vw;
 }
 .edit-btn {
